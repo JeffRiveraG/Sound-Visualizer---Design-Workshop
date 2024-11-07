@@ -1,5 +1,7 @@
 # Sound-Visualizer---Design-Workshop
-A sound visualizer based on Jeff Wu's Music Visualization project with a few added features.
+A sound visualizer based on Jeff Lu's Music Visualization project with a few added features.
+- Jeff Lu's shader project
+  - https://github.com/jeff2957/Music-Visualization--shader-ball-
 
 
 # What I added:
