@@ -15,4 +15,4 @@ A sound visualizer based on Jeff Lu's Music Visualization project with a few add
   - 'g' - grayscale
   - 'c' - colored
   - 'p' - play/pause
-- Helper functions to clean code
+- Helper functions for maintaining code
