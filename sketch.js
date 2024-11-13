@@ -21,7 +21,7 @@ var slider;
 function preload() {
   audio = loadSound('audio/TIMELESS.mp3');
   myShader = loadShader('shader/vertex.vert', 'shader/fragment.frag');
-  
+
   if (!myShader.isLoaded()) {
     console.error("Shader failed to load.");
   }
@@ -32,7 +32,13 @@ function setup() {
 
   // Control volume so it doesn's start so loud
   slider = createSlider(0, 1, 0.2, 0);
-  slider.position(10, 210);
+  slider.position(10, 260);
+
+  let a = createA("https://github.com/JeffRiveraG/Sound-Visualizer---Design-Workshop", "");
+  let img = createImg('images/github.png', 'GitHub Repo');
+  img.parent(a); // Set the image as the child of the <a> tag
+  img.size(40, 40); 
+  a.position(10, 210);
 
   // Create file input for audio upload
   let audioUpload = createFileInput(handleFile);
@@ -188,10 +194,12 @@ function styleButton(button, x, y) {
   button.position(x, y);
   button.style("background-color", "transparent");
   button.style("padding", "10px 10px");
+  button.style("color", "#000000");
   button.style("font-size", "16px"); 
   button.style("border", "2px solid #000000");
   button.style("border-radius", "15px");
   button.style("cursor", "pointer");
+  button.style("text-decoration", "none");
 }
 
 function togglePlayback() {
